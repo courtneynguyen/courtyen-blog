@@ -1,0 +1,38 @@
+body {
+  background-color: #1A0D27;
+  color: white;
+  font-family: 'lato', sans-serif;
+  letter-spacing: 10px;
+}
+
+.card {
+  background-color: #72697c;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  background: white;
+  /* box-shadow: 100 100px 100px; */
+  animation: animStar 150s linear infinite;
+}
+
+#stars3::after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 3px;
+  height: 3px;
+  background: white;
+}
+
+@keyframes animStar {
+  from	 {
+    transform: translateY(0px)
+  }
+  to	{
+    transform: translateY(-2000px)
+  }
+}
